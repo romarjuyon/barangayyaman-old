@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style/population.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Population</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl bg-light">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#"
+          ><img src="assets/logo.svg" alt="barangay-logo" class="img-fluid" style="max-height: 50px;"
+        /></a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="population.html">Population</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="government.html">Government</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Write your code below this-->
+    <div class="container-xl overflow-hidden my-4">
+      <!-- OVERVIEW -->
+      <h3 class="rm-display-4 rm-text-dark">Overview</h3>
+      <div class="row my-2 gx-2">
+        <div class="col p-2 mx-1 bg-light rm-rounded rm-box-shadow">
+          <p><small class="rm-text-muted">Total Population</small></p>
+          <p class="rm-display-3 rm-text-primary rm-text-medium text-center">
+            11,000
+          </p>
+        </div>
+        <div class="col p-2 mx-1 bg-light rm-rounded rm-box-shadow">
+          <p><small class="rm-text-muted">Total Households</small></p>
+          <p class="rm-display-3 rm-text-primary rm-text-medium text-center">
+            3,000
+          </p>
+        </div>
+      </div>
+      <div class="row my-2 gx-2 gy-lg-0">
+        <!-- AGE -->
+        <div class="col-lg col-6 my-lg-0 my-1">
+          <div class="p-2 bg-light rm-rounded rm-box-shadow">
+            <p><small class="rm-text-muted">Age</small></p>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">0 - 17</p>
+                <p class="rm-text-primary m-0">30%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 30%"
+                  aria-valuenow="30"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">18 - 59</p>
+                <p class="rm-text-primary m-0">53%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 53%"
+                  aria-valuenow="53"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">60 +</p>
+                <p class="rm-text-primary m-0">17%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 17%"
+                  aria-valuenow="17"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <small class="rm-text-muted invisible" style="font-size:10px;"
+              >*Based on the residents aged between 18-59</small
+            >
+          </div>
+        </div>
+
+        <!-- GENDER -->
+        <div class="col-lg col-6 my-lg-0 my-1">
+          <div class="p-2 bg-light rm-rounded rm-box-shadow">
+            <p><small class="rm-text-muted">Gender</small></p>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Male</p>
+                <p class="rm-text-primary m-0">46%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 46%"
+                  aria-valuenow="46"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Female</p>
+                <p class="rm-text-primary m-0">54%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 54%"
+                  aria-valuenow="54"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2 invisible">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">60 +</p>
+                <p class="rm-text-primary m-0">17%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 17%"
+                  aria-valuenow="17"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <small class="rm-text-muted invisible"  style="font-size:10px;"
+              >*Based on the residents aged between 18-59</small
+            >
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="col-lg col-6 my-lg-0 my-1">
+          <div class="p-2 bg-light rm-rounded rm-box-shadow">
+            <p><small class="rm-text-muted">Education</small></p>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Total Students</p>
+                <p class="rm-text-primary m-0">4,231</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 38%"
+                  aria-valuenow="38"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Active</p>
+                <p class="rm-text-primary m-0">90%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 90%"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Out of school</p>
+                <p class="rm-text-primary m-0">10%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 10%"
+                  aria-valuenow="10"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <small class="rm-text-muted invisible"  style="font-size:10px;"
+              >*Based on the residents aged between 18-59</small
+            >
+          </div>
+        </div>
+
+        <!-- EMPLOYMENT -->
+        <div class="col-lg col-6 my-lg-0 my-1">
+          <div class="p-2 bg-light rm-rounded rm-box-shadow">
+            <p><small class="rm-text-muted">Employment</small></p>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Employed</p>
+                <p class="rm-text-primary m-0">75%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 75%"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2 mb-3">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Business Owners</p>
+                <p class="rm-text-primary m-0">12%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 12%"
+                  aria-valuenow="12"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <div class="rm-bar px-2">
+              <div class="bar-detail d-flex justify-content-between">
+                <p class="rm-text-dark m-0">Unemployed</p>
+                <p class="rm-text-primary m-0">13%</p>
+              </div>
+              <div class="progress" style="height: 20px">
+                <div
+                  class="progress-bar rm-progress-current"
+                  role="progressbar"
+                  style="width: 13%"
+                  aria-valuenow="13"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+            <small class="rm-text-muted text-end"  style="font-size:10px;"
+              >*Based on residents aged 18-59</small
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-md-3">
+          <h3 class="rm-display-4 rm-text-dark rm-text-medium">Menu</h3>
+          <div class="row justify-content-center p-2">
+            <div
+              class="
+                col-lg-11
+                rm-box-shadow rm-rounded rm-active rm-hover
+                py-4
+                px-5
+                m-2
+              "
+            >
+              <a href="population.html" class="rm-link"
+                ><img
+                  src="assets/Menu-icons/residents-active.svg"
+                  alt=""
+                  class="img-fluid d-block mx-auto"
+              /></a>
+            </div>
+            <div
+                class="
+                col-lg-11
+                bg-light
+                rm-box-shadow rm-rounded rm-hover
+                py-4
+                px-5
+                m-2
+              "
+            >
+              <a href="households.html" class="rm-link"
+                ><img
+                  src="assets/Menu-icons/households.svg"
+                  alt=""
+                  class="img-fluid d-block mx-auto"
+              /></a>
+            </div>
+            <div
+              class="
+                col-lg-11
+                bg-light
+                rm-box-shadow rm-rounded rm-hover
+                py-4
+                px-5
+                m-2
+              "
+            >
+              <a href="education.html" class="rm-link"
+                ><img
+                  src="assets/Menu-icons/education.svg"
+                  alt=""
+                  class="img-fluid d-block mx-auto"
+              /></a>
+            </div>
+            <div
+              class="
+                col-lg-11
+                bg-light
+                rm-box-shadow rm-rounded rm-hover
+                py-4
+                px-5
+                m-2
+              "
+            >
+              <a href="occupation.html" class="rm-link"
+                ><img
+                  src="assets/Menu-icons/occupation.svg"
+                  alt=""
+                  class="img-fluid d-block mx-auto"
+              /></a>
+            </div>
+            <div
+              class="
+                col-lg-11
+                bg-light
+                rm-box-shadow rm-rounded rm-hover
+                py-4
+                px-5
+                m-2
+              "
+            >
+              <a href="business.html" class="rm-link"
+                ><img
+                  src="assets/Menu-icons/business.svg"
+                  alt=""
+                  class="img-fluid d-block mx-auto"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table -->
+        <div class="col-md-9 mb-4">
+          <h3 class="rm-display-4 rm-text-dark rm-text-medium">Residents</h3>
+          <div class="overflow-auto  bg-light p-1" style="max-height: 70vh;"> 
+            <table class="rm-table">
+              <thead><tr><th title="Field #1" class="rmth-1">No.</th>
+                <th title="Field #2">Name</th>
+                <th title="Field #3">Gender</th>
+                <th title="Field #4" class="rmth-2">House No.</th>
+                </tr></thead>
+                  <tbody><tr>
+                  <td >1</td>
+                  <td>Bronny Foort</td>
+                  <td>Female</td>
+                  <td >5</td>
+                  </tr>
+                  <tr>
+                  <td >2</td>
+                  <td>Rivi Rubenovic</td>
+                  <td>Female</td>
+                  <td >6</td>
+                  </tr>
+                  <tr>
+                  <td >3</td>
+                  <td>Kip Bengtson</td>
+                  <td>Female</td>
+                  <td >7</td>
+                  </tr>
+                  <tr>
+                  <td >4</td>
+                  <td>Maxwell Redon</td>
+                  <td>Male</td>
+                  <td >8</td>
+                  </tr>
+                  <tr>
+                  <td >5</td>
+                  <td>Zorah Giacubo</td>
+                  <td>Female</td>
+                  <td >9</td>
+                  </tr>
+                  <tr>
+                  <td >6</td>
+                  <td>Arch Outlaw</td>
+                  <td>Female</td>
+                  <td >10</td>
+                  </tr>
+                  <tr>
+                  <td >7</td>
+                  <td>Corny Dykas</td>
+                  <td>Male</td>
+                  <td >11</td>
+                  </tr>
+                  <tr>
+                  <td >8</td>
+                  <td>Nikolas Henaughan</td>
+                  <td>Female</td>
+                  <td >12</td>
+                  </tr>
+                  <tr>
+                  <td >9</td>
+                  <td>Clevie Forton</td>
+                  <td>Female</td>
+                  <td >13</td>
+                  </tr>
+                  <tr>
+                  <td >10</td>
+                  <td>Hanni Leyban</td>
+                  <td>Female</td>
+                  <td >14</td>
+                  </tr>
+                  <tr>
+                  <td >11</td>
+                  <td>Ranique Lafflina</td>
+                  <td>Male</td>
+                  <td >15</td>
+                  </tr>
+                  <tr>
+                  <td >12</td>
+                  <td>Mickey Craighall</td>
+                  <td>Male</td>
+                  <td >16</td>
+                  </tr>
+                  <tr>
+                  <td >13</td>
+                  <td>Cordula McDonough</td>
+                  <td>Female</td>
+                  <td >17</td>
+                  </tr>
+                  <tr>
+                  <td >14</td>
+                  <td>Bobbie Bischof</td>
+                  <td>Female</td>
+                  <td >18</td>
+                  </tr>
+                  <tr>
+                  <td >15</td>
+                  <td>Corey Huskisson</td>
+                  <td>Female</td>
+                  <td >19</td>
+                  </tr>
+                  <tr>
+                  <td >16</td>
+                  <td>Morganica Babidge</td>
+                  <td>Female</td>
+                  <td >20</td>
+                  </tr>
+                  <tr>
+                  <td >17</td>
+                  <td>Margi Clare</td>
+                  <td>Female</td>
+                  <td >21</td>
+                  </tr>
+                  <tr>
+                  <td >18</td>
+                  <td>Robbie Sallans</td>
+                  <td>Male</td>
+                  <td >22</td>
+                  </tr>
+                  <tr>
+                  <td >19</td>
+                  <td>Belva Dullard</td>
+                  <td>Female</td>
+                  <td >23</td>
+                  </tr>
+                  <tr>
+                  <td >20</td>
+                  <td>Vaughn Skakunas</td>
+                  <td>Male</td>
+                  <td >24</td>
+                  </tr>
+                  <tr>
+                  <td >21</td>
+                  <td>Natassia Burk</td>
+                  <td>Female</td>
+                  <td >25</td>
+                  </tr>
+                  <tr>
+                  <td >22</td>
+                  <td>Dagny Charker</td>
+                  <td>Male</td>
+                  <td >26</td>
+                  </tr>
+                  <tr>
+                  <td >23</td>
+                  <td>Claudina Chastenet</td>
+                  <td>Male</td>
+                  <td >27</td>
+                  </tr>
+                  <tr>
+                  <td >24</td>
+                  <td>Isabella Ponde</td>
+                  <td>Female</td>
+                  <td >28</td>
+                  </tr>
+                  <tr>
+                  <td >25</td>
+                  <td>Eunice Rodders</td>
+                  <td>Female</td>
+                  <td >29</td>
+                  </tr>
+                  <tr>
+                  <td >26</td>
+                  <td>Virgilio Tweedie</td>
+                  <td>Female</td>
+                  <td >30</td>
+                  </tr>
+                  <tr>
+                  <td >27</td>
+                  <td>Northrup Caldera</td>
+                  <td>Male</td>
+                  <td >31</td>
+                  </tr>
+                  <tr>
+                  <td >28</td>
+                  <td>Amil Archanbault</td>
+                  <td>Male</td>
+                  <td >32</td>
+                  </tr>
+                  <tr>
+                  <td >29</td>
+                  <td>Tuckie Ayree</td>
+                  <td>Male</td>
+                  <td >33</td>
+                  </tr>
+                  <tr>
+                  <td >30</td>
+                  <td>Scarlett Bridal</td>
+                  <td>Female</td>
+                  <td >34</td>
+                  </tr>
+                  <tr>
+                  <td >31</td>
+                  <td>Jennilee Iggulden</td>
+                  <td>Female</td>
+                  <td >35</td>
+                  </tr>
+                  <tr>
+                  <td >32</td>
+                  <td>Cassie Stanett</td>
+                  <td>Female</td>
+                  <td >36</td>
+                  </tr>
+                  <tr>
+                  <td >33</td>
+                  <td>Derril Dawson</td>
+                  <td>Female</td>
+                  <td >37</td>
+                  </tr>
+                  <tr>
+                  <td >34</td>
+                  <td>Ruthanne Hurlston</td>
+                  <td>Male</td>
+                  <td >38</td>
+                  </tr>
+                  <tr>
+                  <td >35</td>
+                  <td>Amata Roisen</td>
+                  <td>Male</td>
+                  <td >39</td>
+                  </tr>
+                  <tr>
+                  <td >36</td>
+                  <td>Netta Shewry</td>
+                  <td>Female</td>
+                  <td >40</td>
+                  </tr>
+                  <tr>
+                  <td >37</td>
+                  <td>Nicolle Dennidge</td>
+                  <td>Male</td>
+                  <td >41</td>
+                  </tr>
+                  <tr>
+                  <td >38</td>
+                  <td>Olwen Laviss</td>
+                  <td>Female</td>
+                  <td >42</td>
+                  </tr>
+                  <tr>
+                  <td >39</td>
+                  <td>Sumner Ingledow</td>
+                  <td>Female</td>
+                  <td >43</td>
+                  </tr>
+                  <tr>
+                  <td >40</td>
+                  <td>Fara Vignaux</td>
+                  <td>Male</td>
+                  <td >44</td>
+                  </tr>
+                  <tr>
+                  <td >41</td>
+                  <td>Waylon Vedmore</td>
+                  <td>Female</td>
+                  <td >45</td>
+                  </tr>
+                  <tr>
+                  <td >42</td>
+                  <td>Therine Antalffy</td>
+                  <td>Male</td>
+                  <td >46</td>
+                  </tr>
+                  <tr>
+                  <td >43</td>
+                  <td>Valdemar Pragnall</td>
+                  <td>Male</td>
+                  <td >47</td>
+                  </tr>
+                  <tr>
+                  <td >44</td>
+                  <td>Ginevra Glencross</td>
+                  <td>Female</td>
+                  <td >48</td>
+                  </tr>
+                  <tr>
+                  <td >45</td>
+                  <td>Anya Ateridge</td>
+                  <td>Female</td>
+                  <td >49</td>
+                  </tr>
+                  <tr>
+                  <td >46</td>
+                  <td>Lynnea Dolley</td>
+                  <td>Female</td>
+                  <td >50</td>
+                  </tr>
+                  <tr>
+                  <td >47</td>
+                  <td>Marna Innes</td>
+                  <td>Male</td>
+                  <td >51</td>
+                  </tr>
+                  <tr>
+                  <td >48</td>
+                  <td>Issy Shearsby</td>
+                  <td>Female</td>
+                  <td >52</td>
+                  </tr>
+                  <tr>
+                  <td >49</td>
+                  <td>Bernardina Vertigan</td>
+                  <td>Male</td>
+                  <td >53</td>
+                  </tr>
+                  <tr>
+                  <td >50</td>
+                  <td>Darius Meriton</td>
+                  <td>Female</td>
+                  <td >54</td>
+                  </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Write your code above this -->
+
+    <!-- Footer -->
+    <div class="footer-container" style="background: #373b5a">
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img
+              src="assets/logo-white.svg"
+              class="footer-logo"
+              alt="barangay-logo"
+            />
+            <small class="footer-copyright"
+              ><br />© Copyright 2021 WD-G4.<br />All Rights Reserved
+            </small>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="col-header">Explore</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="index.html">Home</a></li>
+              <li>
+                <a class="link-secondary" href="government.html">Government</a>
+              </li>
+              <li>
+                <a class="link-secondary" href="population.html">Population</a>
+              </li>
+              <li><a class="link-secondary" href="news.html">News</a></li>
+              <li>
+                <a class="link-secondary" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="col-header">Contact Us</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">(077)7422586</a></li>
+              <li><a class="link-secondary" href="#">+63 45 435 0761</a></li>
+              <li><a class="link-secondary" href="#">+63 45 340 1880</a></li>
+              <li><a class="link-secondary" href="#">+63 45 340 1880</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5 class="col-header">Visit Us</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" href="#"
+                  >Barangay Pogi, Urdaneta City,<br />Pangasinan</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
